@@ -1,0 +1,40 @@
+body{
+    background-color:antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Selector de ID para el encabezado*/
+#encabezado{
+    background-color:lightblue;
+    padding:10px;
+    text-align:center;
+}
+h1{
+    color:darkblue;
+    margin-bottom:10px;
+}
+/*===Selector de clase para la navegación===*/
+.navegacion{
+    background-color:lightgray;
+    padding: 10px;
+    text-align:center;
+    margin:10px 0;
+}
+a{
+    color:darkblue;
+    margin:0 8px;
+}
+/*===Selector de clase para el contenido===*/
+.contenido{
+    padding:15px;
+}
+h2{
+    color:darkblue
+}
+/*===Selector de ID para el pie de la página===*/
+#pie{
+    background-color:lightgrey;
+    text-align:center;
+    padding: 10px;
+    margin: 10px;
+    border:1px solid darkblue;
+}
