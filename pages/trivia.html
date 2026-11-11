@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <h1>Trivia de Florentín Felipe Naya</h1>
+    <h2>1. ¿Quién beatificó a Florentín Felipe Naya ?</h2>
+      <input type="radio" name="p1" value="a"> San Pablo VI<br>
+      <input type="radio" name="p1" value="b"> Juan Pablo II<br>
+     <input type="radio" name="p1" value="c"> Benedicto XVI <br>
+     <h2>2. ¿Cómo participaba en la vida espiritual?</h2>
+      <input type="radio" name="p2" value="a"> De forma ocasional y voluntaria<br>
+      <input type="radio" name="p2" value="b"> Solo en celbraciones importantes<br>
+      <input type="radio" name="p2" value="c"> Rigurosamente en el rezo, Eucaristía y meditación personal<br>
+      <h2>3. ¿Qué se le exigia a Florentín en cautiverio?</h2>
+      <input type="radio" name="p3" value="a"> Que denunciara a otros religiosos<br>
+      <input type="radio" name="p3" value="b"> Que abandonara sus hábitos cristianos<br>
+      <input type="radio" name="p3" value="c"> Que abandonara el rezo público<br>
+      <h2>4. ¿A qué se sintió llamado Florentín?</h2>
+      <input type="radio" name="p4" value="a"> Ser hermano lego en la Orden de las Escuelas Pías<br>
+      <input type="radio" name="p4" value="b"> Ser diácono<br>
+      <input type="radio" name="p4" value="c"> Ser docente<br>
+      <h2>5. ¿Dónde nació Florentín Felipe Naya?</h2>
+      <input type="radio" name="p5" value="a"> Barcelona, Cataluña, España<br>
+      <input type="radio" name="p5" value="b"> Zaragoza, Aragón, España<br>
+      <input type="radio" name="p5" value="c"> Alcampell, Huesca, Aragón, España<br>
+<button id="comprobar" type="button">Comprobar</button>
+<button id="reiniciar" type="button">Reiniciar</button>
+<p id="resultado"></p>
+<script>
+ document.getElementById("comprobar").addEventListener("click", function() {
+  let puntaje = 0;
+  let p1 = document.querySelector('input[name="p1"]:checked');
+  let p2 = document.querySelector('input[name="p2"]:checked');
+  let p3 = document.querySelector('input[name="p3"]:checked');
+  let p4 = document.querySelector('input[name="p4"]:checked');
+  let p5 = document.querySelector('input[name="p5"]:checked');
+if (!p1 || !p2 || !p3 || !p4 || !p5) {
+ document.getElementById("resultado").innerHTML =
+"Debes responder las cinco preguntas.";
+return;
+}
+// Respuestas correctas
+if (p1.value === "b") puntaje++;
+if (p2.value === "c") puntaje++;
+if (p3.value === "b") puntaje++;
+if (p4.value === "a") puntaje++;
+if (p5.value === "c") puntaje++;
+let mensaje = "<h3>Resultado: " + puntaje + "/5 puntos</h3>";
+if (puntaje === 5) {
+mensaje += "¡Felicitaciones! Has respondido correctamente todas las preguntas. ¡Que el ejemplo humilde y fiel de Florentín te inspire siempre!";
+} else {
+mensaje += "Te invito a intentarlo nuevamente, con fe y paciencia lo lograrás.";
+}
+document.getElementById("resultado").innerHTML = mensaje;
+});
+document.getElementById("reiniciar").addEventListener("click", function() {
+let opciones = document.querySelectorAll('input[type="radio"]');
+for (let opcion of opciones) {
+opcion.checked = false;
+}
+document.getElementById("resultado").innerHTML = "";
+});
+</script>
+</body>
+</html>

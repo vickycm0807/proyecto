@@ -1,0 +1,117 @@
+body {
+    background-color: #9bafc6;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+header {
+    background-color: #475c9c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+nav {
+    background-color: #5f6ca4;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #1a245f;
+    margin: 8px;
+    text-decoration: none;
+}
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+h1, h2 {
+    color: #000f6e;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+}
+pregunta {
+    background-color: #fff0f5;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+select {
+    padding: 8px;
+    border: 1px solid #30385f;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+button {
+    background-color: #8ca4d9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #30318a;
+}
+#resultado, #resultadoActividad {
+    color: #3f4699;
+    font-weight: bold;
+    margin-top: 15px;
+}
+footer {
+    background-color: #475c9c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+imagen-centrada {
+    text-align: center;
+    margin: 25px 0;
+}
+img {
+    width: 320px;
+    max-width: 100%;
+    border: 5px solid #30516d;
+    padding: 8px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(30, 96, 156, 0.25);
+    object-fit: cover;
+}
+#trivia {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+h2 {
+    color: #000000;
+    font-size: 1.35em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d4e6f7;
+    padding-bottom: 8px;
+}
+pregunta {
+    background: #f0f7ff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #f1f6fa;
+}
+h3 {
+    font-size: 1em;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
